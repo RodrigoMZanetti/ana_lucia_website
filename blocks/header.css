@@ -54,3 +54,18 @@ a {
 .nav__link a:hover {
   color: blue;
 }
+
+@media (min-width: 1000px) {
+  .header {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .header__title {
+    font-size: 1rem;
+  }
+}
