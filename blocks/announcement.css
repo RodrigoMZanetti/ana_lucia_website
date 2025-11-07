@@ -1,0 +1,32 @@
+.announcement {
+  background-color: #f4a300;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 35px; /* altura menor */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement__inner {
+  display: inline-block;
+  animation: scrollText 15s linear infinite;
+}
+
+.announcement__inner span {
+  color: #4f4003;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 80px;
+  letter-spacing: 0.5px;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

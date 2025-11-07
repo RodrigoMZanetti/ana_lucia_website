@@ -1,0 +1,23 @@
+.ana {
+  background-image: url(../images/escavadeira.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 40px;
+  margin: 0 20px 0 20px;
+}
+
+.ana__saiba-mais {
+  color: white;
+}
+
+.ana__title-span {
+  display: block;
+  text-align: center;
+}

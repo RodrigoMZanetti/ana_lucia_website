@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__title {
+  font-family: "Great Vibes", cursive;
+  font-weight: 700;
+  font-size: 50px;
+  font-style: normal;
+  color: rgba(255, 119, 0, 0.911);
+  margin: 0;
+}
+
+.nav {
+  position: absolute;
+  left: 60px;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+.nav__link {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.nav__link-guide a,
+.nav__link a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav__link a:hover {
+  color: blue;
+}
