@@ -1,23 +1,62 @@
+.main {
+  width: 100%;
+}
+
 .ana {
-  background-image: url(../images/escavadeira.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
   display: flex;
-  flex-direction: column;
+}
+
+.ana__cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.ana__cards-block {
+  width: 450px;
+  height: 600px;
+  border-radius: 60px;
+  padding: 40px 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.ana__cards-span {
+  display: block;
+}
+
+.ana__cards-text {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.ana__cards-block.ana__cards-text {
+  display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  border-radius: 40px;
-  margin: 0 20px 0 20px;
+  flex-direction: column;
 }
 
-.ana__saiba-mais {
-  color: white;
+.middle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-.ana__title-span {
-  display: block;
-  text-align: center;
+.middle__title {
+  color: white;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+.middle__text {
+  color: white;
+  font-size: 1.5em;
 }

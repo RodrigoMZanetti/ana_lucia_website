@@ -4,7 +4,6 @@
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  background-color: #ffffff;
   position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -12,7 +11,7 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .header__title {
@@ -46,7 +45,7 @@ a {
 .nav__link-guide a,
 .nav__link a {
   text-decoration: none;
-  color: black;
+  color: white
   font-size: 18px;
   font-weight: 500;
 }
