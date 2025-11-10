@@ -1,0 +1,18 @@
+.middle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.middle__title {
+  color: white;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+.middle__text {
+  color: white;
+  font-size: 1.5em;
+}

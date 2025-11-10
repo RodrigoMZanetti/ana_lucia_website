@@ -1,0 +1,67 @@
+@media screen and (min-width: 320px) {
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .nav {
+    position: absolute;
+    left: 0.8px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .nav__link {
+    font-size: 1rem;
+    justify-content: flex-start;
+  }
+
+  .nav__link-guide a,
+  .nav__link a {
+    font-size: 0.7rem;
+    line-height: 1.2;
+    width: 100%;
+    margin: 0 4px;
+  }
+
+  .nav__link-guide-text {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .ana {
+    display: flex;
+  }
+
+  .ana__cards {
+    margin: 0 0 0 20px;
+    padding: 0;
+    width: 90%;
+    height: 20em;
+    flex-direction: column;
+  }
+
+  .ana__cards-image {
+    width: 80%;
+    height: 15em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .ana__cards-text {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .middle__title {
+  }
+
+  .middle__text {
+    margin: 0;
+  }
+}

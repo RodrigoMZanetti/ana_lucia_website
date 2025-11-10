@@ -4,4 +4,8 @@
 @import url(./blocks/header.css);
 @import url(./blocks/announcement.css);
 @import url(./blocks/main.css);
+@import url(./blocks/ana.css);
+@import url(./blocks/middle.css);
 @import url(./blocks/about.css);
+
+@import url(./blocks/media.css);

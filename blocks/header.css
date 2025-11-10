@@ -14,15 +14,6 @@ a {
   color: white;
 }
 
-.header__title {
-  font-family: "Great Vibes", cursive;
-  font-weight: 700;
-  font-size: 50px;
-  font-style: normal;
-  color: rgba(255, 119, 0, 0.911);
-  margin: 0;
-}
-
 .nav {
   position: absolute;
   left: 60px;
@@ -45,26 +36,11 @@ a {
 .nav__link-guide a,
 .nav__link a {
   text-decoration: none;
-  color: white
+  color: white;
   font-size: 18px;
   font-weight: 500;
 }
 
 .nav__link a:hover {
   color: blue;
-}
-
-@media (min-width: 1000px) {
-  .header {
-    flex-direction: column;
-    font-size: 1rem;
-  }
-
-  .nav {
-    display: flex;
-  }
-
-  .header__title {
-    font-size: 1rem;
-  }
 }
