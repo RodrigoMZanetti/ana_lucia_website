@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,89 +17,97 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
-
-    <title>Ana Lúcia Engenharia</title>
+    <title>Ana Lúcia Engenharia | Projetos Estruturais e Arquitetônicos</title>
   </head>
 
-  <div class="announcement">
-    <div class="announcement__inner">
-      <span>✨ SAIBA MAIS SOBRE OS PROJETOS ✨</span>
-      <span>✨ SAIBA MAIS SOBRE OS PROJETOS ✨</span>
-    </div>
-  </div>
-
   <body>
-    <div class="page">
-      <header class="header">
-        <!-- ✅NAVEGADOR -->
-        <nav class="nav">
-          <ul class="nav__link">
-            <li class="nav__link-guide">
-              <a class="nav__link-guide-text" href="./index.html">Home</a>
-            </li>
-
-            <li class="nav__link-guide">
-              <a class="nav__link-guide-text" href="#">Projetos</a>
-            </li>
-
-            <li class="nav__link-guide">
-              <a class="nav__link-guide-text" href="./pages/about.html"
-                >Minha trajetória</a
-              >
-            </li>
-
-            <li class="nav__link-guide">
-              <a class="nav__link-guide-text" href="">Entre em contato</a>
-            </li>
-          </ul>
-        </nav>
-        <!--✅FIM NAVEGADOR -->
-      </header>
-
-      <!--🔴COMEÇO DO MAIN -->
-      <main class="main">
-        <!--🔵SESSÃO ANA -->
-        <section class="ana">
-          <div class="ana__cards">
-            <img
-              class="ana__cards-block ana__cards-image"
-              src="images/ana lucia 3.png"
-              alt="ana lucia com roupas de trabalho no canteiro de obras"
-            />
-
-            <p class="ana__cards-block ana__cards-text">
-              Ser sempre honesta e
-              <span class="ana__cards-span"
-                >dedicação total a cada serviço adquirido.</span
-              >
-            </p>
-          </div>
-        </section>
-        <!--🔵SESSÃO MIDDLE -->
-        <section class="middle">
-          <h1 class="middle__title">PROJETOS</h1>
-          <p class="middle__text">42 anos de excelência</p>
-        </section>
-        <!--🔵SESSÃO FOTOS DOS PROJETOS -->
-        <section class="cards-projects">
-          <img
-            class="cards-projects__image"
-            src="images/p300_1.png"
-            alt="projeto 1"
-          />
-          <img
-            class="cards-projects__image"
-            src="images/p300_2.png"
-            alt="projeto 2"
-          />
-          <img
-            class="cards-projects__image"
-            src="images/p300_3.png"
-            alt="projeto 3"
-          />
-        </section>
-      </main>
-      <footer class="footer"></footer>
+    <div class="announcement">
+      <div class="announcement__inner">
+        <span>✨ SAIBA MAIS SOBRE OS PROJETOS ✨</span>
+        <span>✨ SAIBA MAIS SOBRE OS PROJETOS ✨</span>
+      </div>
     </div>
+
+    <header class="header" role="banner">
+      <!-- ✅NAVEGADOR -->
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Projetos</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="./pages/about.html">Minha trajetória</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="">Entre em contato</a>
+          </li>
+        </ul>
+      </nav>
+      <!--✅FIM NAVEGADOR -->
+    </header>
+
+    <!--🔴COMEÇO DO MAIN -->
+    <main class="main" role="main">
+      <!--🔵SESSÃO ANA -->
+
+      <section class="hero">
+        <div class="page">
+          <div class="hero__container">
+            <div class="hero__content">
+              <h1 class="hero__title">Excelência em Projetos Estruturais</h1>
+              <p class="hero__text">
+                Ser sempre honesta e dedicação total a cada serviço adquirido.
+              </p>
+            </div>
+            <div class="hero__media">
+              <img
+                class="hero__image"
+                src="images/ana_lucia_3.png"
+                alt="ana lucia com roupas de trabalho no canteiro de obras"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--🔵SESSÃO MIDDLE -->
+      <section class="projects-intro">
+        <h2 class="projects-intro__title">PROJETOS</h2>
+        <p class="projects-intro__text">42 anos de excelência</p>
+      </section>
+      <!--🔵SESSÃO FOTOS DOS PROJETOS -->
+      <section class="project-gallery">
+        <div class="project-gallery__grid">
+          <div class="project-gallery__item">
+            <img
+              class="project-gallery__image"
+              src="images/p300_1.png"
+              alt="projeto 1"
+            />
+          </div>
+          <div class="project-gallery__item">
+            <img
+              class="project-gallery__image"
+              src="images/p300_2.png"
+              alt="projeto 2"
+            />
+          </div>
+          <div class="project-gallery__item">
+            <img
+              class="project-gallery__image"
+              src="images/p300_3.png"
+              alt="projeto 3"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo"></footer>
   </body>
 </html>
