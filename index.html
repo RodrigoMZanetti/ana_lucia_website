@@ -21,35 +21,31 @@
     <title>Ana Lúcia Engenharia</title>
   </head>
 
-  <div class="announcement">
-    <div class="announcement__inner">
-      <span>✨ SAIBA MAIS SOBRE OS PROJETOS ✨</span>
-      <span>✨ SAIBA MAIS SOBRE OS PROJETOS ✨</span>
-    </div>
-  </div>
-
   <body>
     <div class="page">
+      <div class="announcement">
+        <div class="announcement__inner">
+          <span>✨ SAIBA MAIS SOBRE OS PROJETOS ✨</span>
+          <span>✨ SAIBA MAIS SOBRE OS PROJETOS ✨</span>
+        </div>
+      </div>
+
       <header class="header">
         <!-- ✅NAVEGADOR -->
         <nav class="nav">
           <ul class="nav__link">
             <li class="nav__link-guide">
-              <a class="nav__link-guide-text" href="./index.html">Home</a>
-            </li>
-
-            <li class="nav__link-guide">
-              <a class="nav__link-guide-text" href="#">Projetos</a>
-            </li>
-
-            <li class="nav__link-guide">
-              <a class="nav__link-guide-text" href="./pages/about.html"
-                >Minha trajetória</a
+              <a class="nav__link-guide-text" href="#cards-projects"
+                >Projetos</a
               >
             </li>
 
             <li class="nav__link-guide">
-              <a class="nav__link-guide-text" href="">Entre em contato</a>
+              <a class="nav__link-guide-text" href="#formulario">Formulário</a>
+            </li>
+
+            <li class="nav__link-guide">
+              <a class="nav__link-guide-text" href="#contatos">Fale comigo</a>
             </li>
           </ul>
         </nav>
@@ -58,48 +54,81 @@
 
       <!--🔴COMEÇO DO MAIN -->
       <main class="main">
-        <!--🔵SESSÃO ANA -->
-        <section class="ana">
-          <div class="ana__cards">
-            <img
-              class="ana__cards-block ana__cards-image"
-              src="images/ana lucia 3.png"
-              alt="ana lucia com roupas de trabalho no canteiro de obras"
-            />
-
-            <p class="ana__cards-block ana__cards-text">
-              Ser sempre honesta e
-              <span class="ana__cards-span"
-                >dedicação total a cada serviço adquirido.</span
-              >
-            </p>
-          </div>
+        <!--🔵SESSÃO HERO -->
+        <section class="hero">
+          <ul class="hero__list">
+            <li class="hero__item">
+              <img
+                class="hero__image"
+                src="images/ana lucia 3.png"
+                alt="ana lucia com roupas de trabalho no canteiro de obras"
+              />
+            </li>
+            <li class="hero__item">
+              <p class="hero__text">
+                Ser sempre honesta e dedicação total a cada serviço adquirido.
+              </p>
+            </li>
+          </ul>
         </section>
-        <!--🔵SESSÃO MIDDLE -->
-        <section class="middle">
-          <h1 class="middle__title">PROJETOS</h1>
-          <p class="middle__text">42 anos de excelência</p>
+
+        <!--🔵SESSÃO MARKETING -->
+        <section class="marketing">
+          <h1 class="marketing__title">PROJETOS</h1>
+          <h2 class="marketing__paragraph">42 anos de excelência</h2>
         </section>
         <!--🔵SESSÃO FOTOS DOS PROJETOS -->
-        <section class="cards-projects">
-          <img
-            class="cards-projects__image"
-            src="images/p300_1.png"
-            alt="projeto 1"
-          />
-          <img
-            class="cards-projects__image"
-            src="images/p300_2.png"
-            alt="projeto 2"
-          />
-          <img
-            class="cards-projects__image"
-            src="images/p300_3.png"
-            alt="projeto 3"
-          />
+        <section class="cards-projects" id="cards-projects">
+          <ul class="cards-projects__list">
+            <li class="cards-projects__item">
+              <img
+                class="cards-projects__image"
+                src="images/p300_1.png"
+                alt="projeto 1"
+              />
+            </li>
+            <li class="cards-projects__item">
+              <img
+                class="cards-projects__image"
+                src="images/p300_2.png"
+                alt="projeto 2"
+              />
+            </li>
+            <li class="cards-projects__item">
+              <img
+                class="cards-projects__image"
+                src="images/p300_3.png"
+                alt="projeto 3"
+              />
+            </li>
+          </ul>
+        </section>
+        <!--🔵🔵🔵SESSÃO DOS PROJETOS -->
+        <section class="projects">
+          <ul class="projects__list">
+            <li class="projects__item">Primeiro Projeto - ainda escrever</li>
+            <li class="projects__item">Segundo Projeto - ainda escrever</li>
+            <li class="projects__item">Terceiro Projeto - ainda escrever</li>
+          </ul>
+        </section>
+
+        <!--☀️☀️☀️SESSÃO FORMULÁRIO-->
+        <section class="contatos" id="formulario">
+          <p class="formulario__futuro">FUTURO FORMULÁRIO</p>
+        </section>
+
+        <!--🔴🔴🔴SESSÃO FALE COMIGO-->
+        <section class="contatos" id="contatos">
+          <ul class="contatos__list">
+            <li class="contatos__item">Email</li>
+            <li class="contatos__item">Whatsapp</li>
+            <li class="contatos__item">Instagram</li>
+          </ul>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <p class="futuro__footer">FUTURO FOOTER</p>
+      </footer>
     </div>
   </body>
 </html>

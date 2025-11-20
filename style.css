@@ -1,12 +1,14 @@
 @import url(./vendor/normalize.css);
 
-@import url(./blocks/page.css);
-@import url(./blocks/header.css);
-@import url(./blocks/announcement.css);
-@import url(./blocks/main.css);
-@import url(./blocks/ana.css);
-@import url(./blocks/middle.css);
-@import url(./blocks/about.css);
-@import url(./blocks/card-project.css);
-
-@import url(./blocks/media.css);
+@import url(./blocks/01-page.css);
+@import url(./blocks/02-announcement.css);
+@import url(./blocks/03-header.css);
+@import url(./blocks/04-nav.css);
+@import url(./blocks/05-main.css);
+@import url(./blocks/06-hero.css);
+@import url(./blocks/07-marketing.css);
+@import url(./blocks/08-card-project.css);
+@import url(./blocks/09-projects.css);
+@import url(./blocks/10-formulario.css);
+@import url(./blocks/11-contatos.css);
+@import url(./blocks/12-footer.css);
