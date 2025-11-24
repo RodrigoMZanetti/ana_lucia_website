@@ -1,7 +1,7 @@
 @import url(./vendor/normalize.css);
 
 @import url(./blocks/01-page.css);
-@import url(./blocks/02-announcement.css);
+@import url(./blocks/02-body.css);
 @import url(./blocks/03-header.css);
 @import url(./blocks/04-nav.css);
 @import url(./blocks/05-main.css);

@@ -1,11 +1,29 @@
 .nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-a {
+.nav__link-guide-text {
+  font-size: 50px;
   text-decoration: none;
   color: white;
-  font-size: 1rem;
   font-family: "Space Grotesk", sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .nav {
+    width: 70%;
+  }
 }

@@ -2,20 +2,50 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 20px;
-  width: 90%;
-  margin-top: 40px;
+  margin: 40px auto 0;
+  width: 100%;
+  max-width: 1280px;
 }
 
 .projects__images {
   border-radius: 10%;
-  max-width: 90%;
   height: auto;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 .projects__text {
   color: rgb(255, 255, 255);
-  margin: 0;
+  margin: 20px auto;
   text-align: center;
-  font-size: 2rem;
+  font-size: 50px;
+  width: 80%;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    width: 70%;
+  }
+
+  .projects__images {
+    width: 70%;
+  }
+
+  .projects__text {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .projects {
+    width: 70%;
+  }
+
+  .projects__images {
+    width: 70%;
+  }
+
+  .projects__text {
+    width: 70%;
+  }
 }
