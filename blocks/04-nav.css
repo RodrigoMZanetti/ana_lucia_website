@@ -1,29 +1,40 @@
 .nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1280px;
+  background-color: rgb(126, 73, 3);
   width: 100%;
 }
 
 .nav__link-guide-text {
-  font-size: 50px;
-  text-decoration: none;
-  color: white;
+  font-size: 12px;
+  font-weight: 150;
   font-family: "Space Grotesk", sans-serif;
-  max-width: 1280px;
-  margin: 0 auto;
-  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 5px 0;
 }
 
 @media screen and (max-width: 1024px) {
   .nav {
-    width: 70%;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(126, 73, 3);
+    width: 100%;
+  }
+
+  .nav__link-guide-text {
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 544px) {
   .nav {
-    width: 70%;
+    width: 100%;
+  }
+
+  .nav__link-guide-text {
+    font-size: 12px;
   }
 }

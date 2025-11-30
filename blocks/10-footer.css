@@ -1,0 +1,78 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "foto1 foto2 foto3"
+    "email whatsapp instagram";
+  background-color: rgb(126, 73, 3);
+  padding: 5px 0 5px 0;
+  margin: 0;
+  width: 100%;
+}
+
+.footer p {
+  color: rgb(239, 225, 225);
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 5px;
+  width: 90%;
+}
+
+.footer__texto {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer__texto--email {
+  grid-area: email;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.footer__texto--whatsapp {
+  grid-area: whatsapp;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.footer__texto--instagram {
+  grid-area: instagram;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.footer__fotos--email {
+  grid-area: foto1;
+  max-width: 22px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.footer__fotos--whatsapp {
+  grid-area: foto2;
+  max-width: 22px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.footer__fotos--instagram {
+  grid-area: foto3;
+  max-width: 22px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 544px) {
+  .footer p {
+    font-size: 9px;
+  }
+}

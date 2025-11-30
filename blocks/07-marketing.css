@@ -2,36 +2,30 @@
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
+  margin: 15px 0;
+  padding: 0;
 }
 
 .marketing__title {
-  color: rgb(11, 0, 0);
-  margin: 0 auto;
+  color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 60px;
-  background-color: yellow;
-  width: 100%;
-  padding: 20px 0;
+  font-size: 12px;
+  background-color: rgb(126, 73, 3);
+  font-family: "Space Grotesk", sans-serif;
+  padding: 5px 0;
 }
 
 @media screen and (max-width: 1024px) {
   .marketing {
-    width: 70%;
-  }
-
-  .marketing__title {
-    width: 70%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 544px) {
   .marketing {
-    width: 70%;
+    width: 100%;
   }
-
   .marketing__title {
-    width: 70%;
+    margin-bottom: 12px;
   }
 }
