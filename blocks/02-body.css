@@ -1,8 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(247, 240, 240);
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  background-color: rgba(4, 0, 0, 0.536);
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 15px 15px;
+  box-sizing: border-box;
 }

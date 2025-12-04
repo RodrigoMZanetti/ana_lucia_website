@@ -1,12 +1,18 @@
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "fotocasa fotobombeiro fotoapartamento"
-    "textocasa textobombeiro textoapartamento";
-  margin: 0;
-  padding: 0;
+    "fotocasa"
+    "textocasa"
+    "fotobombeiro"
+    "textobombeiro"
+    "fotoapartamento"
+    "textoapartamento";
+  max-width: 1280px;
   width: 100%;
+  margin: 0 auto;
+  padding: 10px 10px;
+  box-sizing: border-box;
 }
 
 .projects__images--fotocasa {
@@ -34,60 +40,30 @@
 }
 
 .projects__images {
-  border-radius: 30%;
+  border-radius: 50%;
   height: auto;
   object-fit: cover;
   margin: 0 auto;
-  max-width: 150px;
+  max-width: 180px;
   height: auto;
+  box-shadow: 5px -5px 50px rgb(126, 73, 3);
 }
 
 .projects__text {
   color: rgb(255, 255, 255);
   margin: 0 auto;
   text-align: center;
-  font-size: 15px;
+  font-size: 1.2rem;
   font-family: "Space Grotesk", sans-serif;
-  width: 70%;
-  padding-top: 10px;
+  line-height: 1.5rem;
+  padding: 15px 15px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 780px) {
   .projects {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "fotocasa fotobombeiro fotoapartamento"
       "textocasa textobombeiro textoapartamento";
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 544px) {
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "fotocasa textocasa"
-      "fotobombeiro textobombeiro"
-      "fotoapartamento textoapartamento";
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  .projects__images {
-    margin: 10px auto;
-    max-width: 120px;
-    height: auto;
-  }
-
-  .projects__text {
-    line-height: 15px;
-    font-size: 10px;
-    width: 70%;
-    padding-top: 10px;
   }
 }

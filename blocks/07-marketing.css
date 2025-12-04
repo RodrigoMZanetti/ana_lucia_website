@@ -1,31 +1,24 @@
 .marketing {
   display: grid;
   grid-template-columns: 1fr;
+  max-width: 1280px;
   width: 100%;
-  margin: 15px 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 10px 10px;
+  box-sizing: border-box;
 }
 
 .marketing__title {
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 12px;
+  font-size: 1.3rem;
   background-color: rgb(126, 73, 3);
   font-family: "Space Grotesk", sans-serif;
   padding: 5px 0;
 }
 
-@media screen and (max-width: 1024px) {
-  .marketing {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 544px) {
-  .marketing {
-    width: 100%;
-  }
+@media screen and (min-width: 780px) {
   .marketing__title {
-    margin-bottom: 12px;
+    font-size: 1.7rem;
   }
 }
