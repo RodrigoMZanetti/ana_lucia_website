@@ -15,6 +15,7 @@
   background-color: rgb(126, 73, 3);
   font-family: "Space Grotesk", sans-serif;
   padding: 5px 0;
+  border-radius: 10%;
 }
 
 @media screen and (min-width: 780px) {
