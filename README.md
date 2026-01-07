@@ -1,5 +1,7 @@
 # Ana-Lucia-Engenharia
 
+![Project Screenshot](./images/Screenshot.png)
+
 ## Project Overview 📊
 
 Ana Lúcia Engenharia is a front-end web project developed to simulate a professional engineering website, with a focus on interactivity, DOM manipulation, and structured JavaScript logic. The website allows user interaction through dynamic elements and scripts, serving as a practice project for combining HTML, CSS, and JavaScript in a real-world–like scenario.
@@ -64,3 +66,21 @@ Special attention was given to:
 
 • GitHub: https://github.com/RodrigoMZanetti
 • LinkedIn: https://www.linkedin.com/in/rodrigomaturanozanetti/
+
+# TÍTULO
+
+## Project Overview 📊
+
+## Features ✨
+
+## Technologies Used 🛠️
+
+## Project Structure 🗂️
+
+## How to Run the Project ▶️
+
+## Project Status 📌
+
+## Problem-Solving Approach 🧠
+
+## Author 👤
