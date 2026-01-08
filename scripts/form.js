@@ -4,4 +4,5 @@ const sendButton = formulario.querySelector(".formulario__form_button");
 formulario.addEventListener("submit", function (evt) {
   evt.preventDefault();
   console.log("submit capturado");
+  const userName = formulario.querySelector(".classeaqui");
 });
