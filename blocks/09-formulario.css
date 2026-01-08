@@ -71,3 +71,7 @@
   font-size: 1.1rem;
   line-height: 1.1rem;
 }
+
+.formulario__form_button {
+  width: 20%;
+}
