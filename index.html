@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -103,17 +103,21 @@
             </h2>
           </div>
           <div class="formulario__content">
+            <!--FORMULÁRIO-->
             <form action="#" id="form" class="formulario__form">
+              <!--NOME-->
               <label for="name" class="formulario__form-label"
                 >Nome completo*</label
               >
               <input
                 type="text"
                 placeholder="Nome"
-                required
+                name="name"
                 id="name"
-                class="formulario__form-input"
+                class="formulario__form-input form__input"
+                required
               />
+              <!--IDADE-->
 
               <label for="date" class="formulario__form-label"
                 >Data de Nascimento*</label
@@ -121,20 +125,22 @@
               <input
                 type="date"
                 placeholder="dd/mm/aa"
-                required
                 id="date"
-                class="formulario__form-input"
+                min="01-01-1910"
+                class="formulario__form-input form__input"
+                required
               />
-
+              <!--EMAIL-->
               <label for="email" class="formulario__form-label"
                 >Seu e-mail*</label
               >
               <input
                 type="email"
+                name="email"
+                class="formulario__form-input form__input"
+                id="email"
                 placeholder="email@email.com"
                 required
-                id="email"
-                class="formulario__form-input"
               />
 
               <label for="mensagem" class="formulario__form-label"
@@ -159,12 +165,12 @@
                 accept=".pdf, .png, .jpg, .jpeg, .doc, .docx"
                 multiple
               />
-
+              <!--CHECKBOX-->
               <div class="formulario__form-checkbox">
                 <input
                   type="checkbox"
                   id="terms"
-                  class="formulario__form-checkbox-button"
+                  class="formulario__form-checkbox-button form__input"
                   required
                 />
                 <label for="terms" class="formulario__form-checkbox-label"
@@ -172,7 +178,7 @@
                 >
               </div>
 
-              <button class="formulario__form_button">SEND</button>
+              <button class="formulario__form_button">SUBMIT</button>
             </form>
           </div>
         </section>

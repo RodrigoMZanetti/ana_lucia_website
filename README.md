@@ -66,21 +66,3 @@ Special attention was given to:
 
 • GitHub: https://github.com/RodrigoMZanetti
 • LinkedIn: https://www.linkedin.com/in/rodrigomaturanozanetti/
-
-# TÍTULO
-
-## Project Overview 📊
-
-## Features ✨
-
-## Technologies Used 🛠️
-
-## Project Structure 🗂️
-
-## How to Run the Project ▶️
-
-## Project Status 📌
-
-## Problem-Solving Approach 🧠
-
-## Author 👤
