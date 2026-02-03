@@ -115,6 +115,8 @@
                 name="name"
                 id="name"
                 class="formulario__form-input form__input"
+                minlength="5"
+                maxlength="50"
                 required
               />
               <!--IDADE-->
@@ -126,7 +128,7 @@
                 type="date"
                 placeholder="dd/mm/aa"
                 id="date"
-                min="01-01-1910"
+                min="1910-01-01"
                 class="formulario__form-input form__input"
                 required
               />
@@ -140,6 +142,7 @@
                 class="formulario__form-input form__input"
                 id="email"
                 placeholder="email@email.com"
+                maxlength="254"
                 required
               />
 
@@ -153,6 +156,8 @@
                 placeholder="Digite aqui..."
                 class="formulario__form-input"
                 rows="5"
+                minlength="10"
+                maxlength="1000"
               ></textarea>
 
               <label for="arquivo" class="formulario__form-label">
