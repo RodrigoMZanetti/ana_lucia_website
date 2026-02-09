@@ -13,16 +13,15 @@ Ana Lúcia Engenharia is a front-end web project developed to simulate a profess
 • Structured layout using semantic HTML
 • Responsive styling with CSS
 • Organized assets (images, fonts, vendor files)
+• Interactive form validation with JavaScript
+• Custom validation feedback using DOM manipulation
+• Submit button state control based on form validity
 
 ## Technologies Used 🛠️
 
 • HTML5 – semantic structure and content organization
 • CSS3 – layout, responsiveness, and visual styling
-• JavaScript (Vanilla JS) –
-DOM selection and manipulation
-Event handling
-Script loading optimization (defer)
-Separation of concerns between structure and logic
+• JavaScript (Vanilla JS)
 
 ## Project Structure 🗂️
 
@@ -43,8 +42,8 @@ Optional (recommended):
 
 ## Project Status 📌
 
-🚧 In progress
-New features and refinements are being added as part of continuous learning and improvement.
+✅ Completed (learning project)
+Future improvements may include refactoring and code reuse.
 
 ## Problem-Solving Approach 🧠
 

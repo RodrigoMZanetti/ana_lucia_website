@@ -1,13 +1,15 @@
 .span-class {
-  color: red !important;
+  color: rgb(255, 255, 255);
 }
 
 .sub-button-is-on {
-  color: rgba(36, 36, 236, 0.492);
-  border: 3px solid white;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(0, 0, 0);
 }
 
 .sub-button-is-off {
-  color: rgba(4, 4, 4, 0);
-  border: 1px solid white;
+  color: rgb(58, 57, 57);
+  background-color: rgb(123, 121, 121);
+  border: 1px solid rgb(118, 115, 115);
 }
