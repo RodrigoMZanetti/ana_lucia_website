@@ -1,3 +1,13 @@
-.span-message{
-  color: red
+.span-class {
+  color: red;
+}
+
+.sub-button-is-on {
+  color: rgba(36, 36, 236, 0.492);
+  border: 3px solid white;
+}
+
+.sub-button-is-off {
+  color: rgba(4, 4, 4, 0);
+  border: 1px solid white;
 }
