@@ -1,16 +1,14 @@
-.page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.701)),
+body {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.701)),
     url(../images/canteiro\ de\ obras.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  max-width: 1280px;
+  background-color: rgba(0, 0, 0, 0.536);
+  width: 100%;
   margin: 0 auto;
-  padding: 15px 15px;
+  padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }

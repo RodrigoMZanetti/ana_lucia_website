@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,29 +16,34 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
-
     <link rel="icon" href="images/enge_logo_fav.png" type="image/png" /
-
-
   </head>
 
   <body>
-    <div class="page">
       <header class="header">
-        <!-- ✅NAVEGADOR -->
-        <nav class="nav">
-          <a class="nav__link-guide-text" href="#projects">Projetos</a>
+      <nav class="nav">
+        <img
+          src="images/Logo_header.png"
+          alt="logotipo Ana Lucia Engenharia"
+          class="nav__logo"
+        />
+        <div class="nav__links">
+          <a class="nav__link" href="#">Home</a>
+          <a class="nav__link" href="#">About</a>
+          <a class="nav__link" href="#">Projects</a>
+          <a class="nav__link" href="#">Contact</a>
+          <a class="nav__link" href="#">Instagram</a>
+        </div>
+      </nav>
+      <p class="header__phrase">
+        Engineering spaces with precision, integrity, and a vision for
+        structures that stand the test of time.
+      </p>
+    </header>
 
-          <a class="nav__link-guide-text" href="#formulario">Formulário</a>
-
-          <a class="nav__link-guide-text" href="#contatos">Fale comigo</a>
-        </nav>
-        <!--✅FIM NAVEGADOR -->
-      </header>
-
-      <!--🔴COMEÇO DO MAIN -->
+      <!--COMEÇO DO MAIN -->
       <main class="main">
-        <!--🔵SESSÃO HERO -->
+        <!--SESSÃO HERO -->
         <section class="hero">
           <img
             class="hero__image"
@@ -48,60 +52,15 @@
           />
 
           <p class="hero__text">
-            Ser sempre honesta e dedicada a cada etapa do serviço é a base do
-            meu trabalho. Mais do que entregar projetos, entrego segurança,
-            clareza e soluções que respeitam o investimento de cada cliente. A
-            engenharia civil exige responsabilidade e transparência, e é com
-            esses valores que atuo todos os dias. Meu compromisso é transformar
-            necessidades em obras bem planejadas e executadas com excelência -
-            Ana Lucia.
+            Being honest and dedicated at every stage of the service is the foundation of my work. More than delivering projects, I deliver security, clarity, and solutions that respect each client’s investment. Civil engineering requires responsibility and transparency, and these are the values that guide my work every day. My commitment is to transform needs into well-planned projects executed with excellence. — Ana Lucia
           </p>
         </section>
 
-        <!--🔵SESSÃO MARKETING -->
-        <section class="marketing">
-          <h1 class="marketing__title">42 anos de excelência</h1>
-        </section>
-
-        <!--🔵🔵🔵SESSÃO DOS PROJETOS -->
-        <section class="projects" id="projects">
-          <img
-            class="projects__images projects__images--fotocasa"
-            src="images/projeto1.jpg"
-            alt="casa azul"
-          />
-
-          <p class="projects__text projects__text--casa">
-            Obras de construções pequenas e médias para residências individuais
-            ou condomínios.
-          </p>
-
-          <img
-            class="projects__images projects__images--bombeiro"
-            src="images/projeto2.jpg"
-            alt="extinto de incêndio"
-          />
-
-          <p class="projects__text projects__text--bombeiro">
-            Projeto de bombeiro com correta organização e layout.
-          </p>
-
-          <img
-            class="projects__images projects__images--apartamento"
-            src="images/projeto3.jpg"
-            alt="tubulação de apartamento"
-          />
-
-          <p class="projects__text projects__text--apartamento">
-            Mapeamento e organização de tubulação predial ou domicílios.
-          </p>
-        </section>
-
-        <!--☀️☀️☀️SESSÃO FORMULÁRIO-->
+        <!--SESSÃO FORMULÁRIO-->
         <section class="formulario" id="formulario">
           <div class="formulario__title">
             <h2 class="formulario__title-text">
-              ENVIE SUA DÚVIDA OU PROJETO PARA ANÁLISE
+              Send your inquiry or project for review
             </h2>
           </div>
           <div class="formulario__content">
@@ -217,7 +176,7 @@
           analuciaprofissionaleng
         </p>
       </section>
-    </div>
+
     <script src="scripts/form.js" defer></script>
   </body>
 </html>

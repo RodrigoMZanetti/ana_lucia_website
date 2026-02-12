@@ -1,13 +1,10 @@
 @import url(./vendor/normalize.css);
 
-@import url(./blocks/01-page.css);
-@import url(./blocks/02-body.css);
-@import url(./blocks/03-header.css);
-@import url(./blocks/04-nav.css);
-@import url(./blocks/05-main.css);
-@import url(./blocks/06-hero.css);
-@import url(./blocks/07-marketing.css);
-@import url(./blocks/08-projects.css);
-@import url(./blocks/09-formulario.css);
-@import url(./blocks/10-footer.css);
-@import url(./blocks/11-estilos_input.css);
+@import url(./blocks/body.css);
+@import url(./blocks/header.css);
+@import url(./blocks/nav.css);
+@import url(./blocks/main.css);
+@import url(./blocks/hero.css);
+@import url(./blocks/formulario.css);
+@import url(./blocks/estilos_input.css);
+@import url(./blocks/footer.css);
