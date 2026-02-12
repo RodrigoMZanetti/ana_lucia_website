@@ -58,7 +58,11 @@
 }
 
 .footer__newsletter_subscribe-button {
-  padding: 10px;
+  padding: 5px;
+}
+
+.footer__newsletter_subscribe-button p {
+  font-size: 12px;
 }
 
 .footer__copyright {

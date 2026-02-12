@@ -5,11 +5,11 @@
 .sub-button-is-on {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
-  border: 3px solid rgb(0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.619);
 }
 
 .sub-button-is-off {
-  color: rgb(58, 57, 57);
-  background-color: rgb(123, 121, 121);
+  color: rgba(58, 57, 57, 0.373);
+  background-color: rgba(253, 253, 253, 0.405);
   border: 1px solid rgb(118, 115, 115);
 }
