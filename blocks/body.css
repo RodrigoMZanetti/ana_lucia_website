@@ -1,12 +1,4 @@
 body {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.701)),
-    url(../images/canteiro\ de\ obras.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  background-color: rgba(0, 0, 0, 0.536);
   width: 100%;
   margin: 0 auto;
   padding: 0;

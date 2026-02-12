@@ -1,16 +1,16 @@
 .formulario {
-  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding: 10px 10px;
+  padding: 40px 0px;
   box-sizing: border-box;
+  background-color: rgba(183, 177, 4, 0.564);
+  clip-path: ellipse(120% 100% at 50% 0%);
 }
 
 .formulario__title-text {
-  font-size: 1.2rem;
-  color: white;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.548);
   text-align: center;
-  background-color: rgb(126, 73, 3);
   margin: 0 auto;
   padding: 5px 5px;
   border-radius: 10%;
@@ -27,30 +27,31 @@
 }
 
 .formulario__form-label {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 50;
   font-size: 1rem;
   line-height: 1rem;
   margin: 0;
   padding: 15px 0 0 0;
-  color: white;
+  color: rgba(0, 0, 0, 0.592);
 }
 
 .formulario__form-input {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1rem;
   line-height: 1rem;
   margin: 0;
   padding: 10px 0;
-  color: black;
+  color: rgba(0, 0, 0, 0.521);
 }
 
 .formulario__form-checkbox {
   display: flex;
   margin: 0;
   padding: 10px 0;
-  font-family: "Space Grotesk", sans-serif;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 50;
   font-size: 0.8rem;
@@ -64,8 +65,9 @@
 }
 
 .formulario__form-checkbox-label {
-  color: white;
-  font-family: "Space Grotesk", sans-serif;
+  color: rgba(0, 0, 0, 0.488);
+
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 50;
   font-size: 1.1rem;

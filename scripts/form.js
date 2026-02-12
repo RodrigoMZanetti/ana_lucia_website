@@ -18,7 +18,8 @@ inputNome.addEventListener("input", () => {
   const inputValidacaoNome = inputNome.checkValidity();
 
   if (!inputValidacaoNome) {
-    spanPreenchimentoNome.textContent = "Nome deve conter de 5 a 50 caracteres";
+    spanPreenchimentoNome.textContent =
+      "The name must contain between 5 and 50 characters.";
     spanPreenchimentoNome.classList.add("span-class");
   } else {
     spanPreenchimentoNome.textContent = "";
@@ -35,7 +36,7 @@ inputData.addEventListener("input", () => {
   const inputValidacaoData = inputData.checkValidity();
 
   if (!inputValidacaoData) {
-    spanPreenchimentoData.textContent = "Data mínima 01/01/1910";
+    spanPreenchimentoData.textContent = "Minimum date 01/01/1910";
     spanPreenchimentoData.classList.add("span-class");
   } else {
     spanPreenchimentoData.textContent = "";
@@ -53,7 +54,7 @@ inputEmail.addEventListener("input", () => {
 
   if (!inputValidacaoEmail) {
     spanPreenchimentoEmail.textContent =
-      "Máximo 254 caracteres, contendo @ e um e-mail válido";
+      "Maximum 254 characters, including @ and a valid email address.";
     spanPreenchimentoEmail.classList.add("span-class");
   } else {
     spanPreenchimentoEmail.textContent = "";
@@ -69,14 +70,13 @@ checkboxButton.after(spanPreenchimentoCheckbox);
 function checkBoxValidation(event) {
   const verifyCheckbox = event.target;
   if (!verifyCheckbox.checked) {
-    spanPreenchimentoCheckbox.textContent = "Esse campo é obrigatório";
+    spanPreenchimentoCheckbox.textContent = "This field is required.";
     spanPreenchimentoCheckbox.classList.add("span-class");
   } else {
     spanPreenchimentoCheckbox.textContent = "";
     spanPreenchimentoCheckbox.classList.remove("span-class");
   }
 }
-checkBoxValidation({ target: checkboxButton });
 
 checkboxButton.addEventListener("change", checkBoxValidation);
 
@@ -113,6 +113,7 @@ inputFormulario.addEventListener("change", () => {
 
 inputFormulario.addEventListener("submit", (event) => {
   event.preventDefault();
+  checkBoxValidation({ target: checkboxButton });
 
   if (!inputFormulario.checkValidity()) {
     return;
