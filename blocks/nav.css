@@ -1,14 +1,35 @@
 nav {
-  width: 95%;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/fundo_header.png);
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(90, 87, 87, 0.492);
+  z-index: -1;
 }
 
 .nav__logo {
-  max-width: 300px;
+  max-width: 150px;
   margin: 0;
   padding: 0;
 }
