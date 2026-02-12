@@ -84,3 +84,51 @@
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.479);
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .hero__media {
+    margin: 0 auto;
+    max-width: 420px;
+  }
+
+  .hero__image_main {
+    width: 100%;
+  }
+
+  .hero__image_float {
+    right: 0;
+    bottom: -20px;
+    width: 55%;
+  }
+
+  .hero__paragraph {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
+  .hero__button {
+    width: 80%;
+  }
+
+  .hero__button_click {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero__image_float {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+  }
+}

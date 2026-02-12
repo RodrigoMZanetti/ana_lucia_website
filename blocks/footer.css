@@ -69,3 +69,23 @@
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+@media (max-width: 768px) {
+  .footer__containers {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .footer__copyright {
+    padding-top: 20px;
+  }
+
+  .footer__newsletter_text {
+    font-size: 1.1rem;
+  }
+
+  .footer__logos_image {
+    width: 32px;
+  }
+}
