@@ -3,3 +3,13 @@
   margin: 0 auto;
   padding: 0;
 }
+
+/*tablet */
+@media (min-width: 768px) {
+}
+/* desktop*/
+@media (min-width: 1024px) {
+}
+/*big screen*/
+@media (min-width: 1440px) {
+}

@@ -2,12 +2,10 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 100px 0px 50px 0px;
-  position: relative;
+  padding: 20px 0px;
 }
 
 .hero__container {
-  max-width: 1280px;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -15,47 +13,37 @@
   box-sizing: border-box;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .hero__media {
-  position: relative;
-  max-width: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 .hero__image_main {
-  width: 80%;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+
   border-radius: 20px;
   object-fit: cover;
   box-shadow: 2px -2px 20px rgba(21, 12, 0, 0.514);
-}
-
-.hero__image_float {
-  width: 60%;
-
-  border-radius: 20px;
-
-  object-fit: cover;
-  box-shadow: 2px -2px 20px rgba(21, 12, 0, 0.514);
-
-  position: absolute;
-  bottom: -40px;
-  right: -40px;
-  width: 60%;
 }
 
 .hero__information {
-  max-width: 500px;
+  max-width: 100%;
   margin: 0 auto;
+  padding-top: 30px;
   text-align: center;
 }
 
 .hero__text {
-  max-width: 500px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .hero__paragraph {
@@ -67,11 +55,13 @@
 }
 
 .hero__button {
-  width: 40%;
-  margin: 0;
+  width: 100%;
   display: flex;
-  margin: 0 auto;
-  text-align: center;
+  justify-content: center;
+}
+
+.hero__button p {
+  font-size: 1rem;
 }
 
 .hero__button_click {
@@ -85,50 +75,20 @@
   border: 1px solid rgba(0, 0, 0, 0.479);
 }
 
-@media (max-width: 768px) {
-  .hero {
-    padding: 50px 0;
-  }
-
-  .hero__container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 0 10px;
-  }
-
-  .hero__media {
-    margin: 0 auto;
-    max-width: 420px;
-  }
-
+/*tablet */
+@media (min-width: 768px) {
   .hero__image_main {
-    width: 100%;
-  }
-
-  .hero__image_float {
-    right: 0;
-    bottom: -20px;
-    width: 55%;
-  }
-
-  .hero__paragraph {
-    font-size: 1.1rem;
-    line-height: 1.6rem;
-  }
-
-  .hero__button {
-    width: 80%;
-  }
-
-  .hero__button_click {
-    padding: 14px;
+    max-width: 300px;
   }
 }
-
-@media (max-width: 500px) {
-  .hero__image_float {
-    position: static;
-    margin-top: 10px;
-    width: 100%;
+/* desktop*/
+@media (min-width: 1024px) {
+  .hero__container {
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
+}
+/*big screen*/
+@media (min-width: 1440px) {
 }
