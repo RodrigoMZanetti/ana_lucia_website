@@ -3,6 +3,11 @@ body {
   margin: 0 auto;
   padding: 0px;
   box-sizing: border-box;
+  overflow: auto;
+}
+
+body.overflow {
+  overflow: hidden;
 }
 
 /*tablet */

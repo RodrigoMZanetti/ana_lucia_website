@@ -34,7 +34,7 @@
 .media__clients {
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 80px 0px 0px;
 }
 
 .media__clients_text {
@@ -43,7 +43,6 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
   margin: 0 auto;
-  padding-top: 50px;
 }
 
 .media__clients_image {

@@ -1,0 +1,77 @@
+.popup {
+  width: 100%;
+
+  font-family: "Inter", Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  display: none;
+  z-index: 1;
+}
+
+/*OPEN IMAGE POPUP*/
+
+.popup_is-opened {
+  display: flex;
+}
+
+.popup__content_content_image {
+  max-width: 75vw;
+  max-height: 75vh;
+  height: auto;
+  width: auto;
+  display: flex;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+
+.popup__image {
+  max-width: 90vw;
+  max-height: 90vh;
+
+  object-fit: cover;
+  filter: brightness(0.3);
+  border-radius: 20px;
+}
+
+/*CLOSE POPUP BUTTON*/
+.popup__content {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  padding: 10px 10px;
+  border: 1px solid white;
+}
+
+/*POPUP TEXT*/
+.popup__text {
+  width: 80%;
+
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.756);
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  position: absolute;
+}

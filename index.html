@@ -289,17 +289,38 @@
         Copyright © 2026 Rodrigo Zanetti, All Rights Reserved.
       </p>
     </section>
-
+    <!--IMAGE POPUP-->
     <div class="popup" id="image-popup">
       <div class="popup__content popup__content_content_image">
         <button
           aria-label="close-popup-image"
           type="button"
           class="popup-close"
-        ></button>
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <line
+              x1="4"
+              y1="4"
+              x2="20"
+              y2="20"
+              stroke="white"
+              stroke-width="2"
+            />
+            <line
+              x1="20"
+              y1="4"
+              x2="4"
+              y2="20"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+        <img alt="" class="popup__image" src="#" />
+        <p class="popup__text"></p>
       </div>
     </div>
-
+    <!---->
     <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>

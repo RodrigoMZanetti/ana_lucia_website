@@ -1,8 +1,7 @@
-/////Popup image
-
+/////POPUP FUNCTIONS
 function handleEscClose(evt) {
   if (evt.key === "Escape") {
-    const openedPopup = document.querySelector(".popup.popup_is-open");
+    const openedPopup = document.querySelector(".popup.popup_is-opened");
     if (openedPopup) {
       closePopup(openedPopup);
     }
@@ -10,11 +9,13 @@ function handleEscClose(evt) {
 }
 
 export function openPopup(popup) {
-  popup.classList.add("popup_is-open");
+  popup.classList.add("popup_is-opened");
+  document.body.classList.add("overflow");
   document.addEventListener("keydown", handleEscClose);
 }
 
 export function closePopup(popup) {
-  popup.classList.remove("popup_is-open");
+  popup.classList.remove("popup_is-opened");
+  document.body.classList.remove("overflow");
   document.removeEventListener("keydown", handleEscClose);
 }
