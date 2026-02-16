@@ -34,8 +34,8 @@
 }
 
 .popup__image {
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 80vw;
+  max-height: 60vh;
 
   object-fit: cover;
   filter: brightness(0.3);
@@ -59,7 +59,7 @@
   border: none;
   cursor: pointer;
   z-index: 2;
-  padding: 10px 10px;
+  padding: 5px 5px;
   border: 1px solid white;
 }
 
@@ -67,11 +67,21 @@
 .popup__text {
   width: 80%;
 
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.8;
   color: rgba(255, 255, 255, 0.756);
   font-family: Georgia, "Times New Roman", Times, serif;
 
   position: absolute;
+}
+
+/*tablet */
+@media (min-width: 768px) {
+}
+/* desktop*/
+@media (min-width: 1024px) {
+}
+/*big screen*/
+@media (min-width: 1440px) {
 }
