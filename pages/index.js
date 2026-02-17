@@ -1,5 +1,5 @@
-import init from "./form.js";
-import { openPopup, closePopup } from "./card.js";
+import init from "../components/form.js";
+import { openPopup, closePopup } from "../components/card.js";
 
 /////IMAGE TEXTS
 const photoOfAna = {
