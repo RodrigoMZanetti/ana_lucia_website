@@ -4,7 +4,7 @@
   font-family: "Inter", Arial, sans-serif;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(15, 0, 70, 0.5);
 
   position: fixed;
   top: 0;
@@ -12,14 +12,24 @@
   bottom: 0;
   right: 0;
 
-  display: none;
+  display: flex;
   z-index: 1;
+  visibility: hidden;
+  pointer-events: none;
+
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
 }
 
 /*OPEN IMAGE POPUP*/
 
 .popup_is-opened {
-  display: flex;
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .popup__content_content_image {
