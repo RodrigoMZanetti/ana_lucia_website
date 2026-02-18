@@ -11,37 +11,37 @@ const photoOfAna = {
 ///PROJECTS
 const projects = [
   {
-    image: "images/projeto_1536-1024_1.png",
+    image: "./images/projeto_1536-1024_1.png",
     alt: "Modern interior structural blueprint with technical drafting tools on architectural plans",
     description:
       "In 2024, I led the interior structural design project for a growing commercial company seeking a modern and functional workspace. I developed detailed technical drawings and optimized the spatial layout while ensuring full compliance with safety standards. The redesign improved space utilization by 15 percent and enhanced natural lighting integration. The final result combined structural precision with contemporary interior design principles.",
   },
   {
-    image: "images/projeto_1536-1024_2.png",
+    image: "./images/projeto_1536-1024_2.png",
     alt: "Underground water pipeline installation with workers assembling large blue pipes in a trench",
     description:
       "In 2023, I supervised the underground pipeline installation for a municipal water infrastructure project. The objective was to modernize the drainage system and improve long-term water distribution efficiency. I coordinated structural planning, safety compliance, and on-site technical execution to ensure precise alignment and durability. The project was completed ahead of schedule and significantly enhanced the city’s infrastructure reliability.",
   },
   {
-    image: "images/projeto_1536-1024_3.png",
+    image: "./images/projeto_1536-1024_3.png",
     alt: "Reinforced concrete foundation under construction inside an industrial facility",
     description:
       "In 2024, I led the structural foundation development for a large-scale industrial facility renovation. The project required detailed load analysis, reinforced concrete planning, and strict adherence to safety regulations. I coordinated multidisciplinary teams to ensure precision in excavation, formwork, and structural alignment. The result was a stable, high-performance foundation prepared to support advanced industrial operations.",
   },
   {
-    image: "images/projeto_1536-1024_4.png",
+    image: "./images/projeto_1536-1024_4.png",
     alt: "Contemporary residential house with modern architecture and landscaped garden",
     description:
       "In 2024, I designed the structural and architectural layout for a contemporary residential project focused on sustainability and comfort. The concept integrated natural lighting, optimized spatial flow, and environmentally conscious materials. I collaborated closely with landscape designers to harmonize the structure with the surrounding greenery. The final result was a modern home that balances aesthetics, functionality, and long-term durability.",
   },
   {
-    image: "images/projeto_1536-1024_5.png",
+    image: "./images/projeto_1536-1024_5.png",
     alt: "Engineering team reviewing architectural blueprints during a project planning meeting",
     description:
       "In 2024, I collaborated with a multidisciplinary team to develop the technical planning for a commercial renovation project. We worked closely on detailed blueprints, ensuring structural accuracy and optimized spatial functionality. My role involved coordinating design adjustments and verifying compliance with engineering standards. The project was successfully executed through strong communication, precision, and strategic planning.",
   },
   {
-    image: "images/projeto_1536-1024_6.png",
+    image: "./images/projeto_1536-1024_6.png",
     alt: "Highway overpass construction site with cranes and reinforced concrete bridge supports",
     description:
       "In 2023, I supervised the structural execution of a highway overpass construction project aimed at improving urban mobility. The work involved reinforced concrete foundations, load distribution analysis, and strict adherence to safety and environmental standards. I coordinated field operations to ensure precision during excavation and structural assembly. The project strengthened regional connectivity and enhanced long-term transportation efficiency.",
