@@ -12,7 +12,7 @@ const photoOfAna = {
 const projects = [
   {
     image: "images/projeto_1536-1024_1.png",
-    atl: "Modern interior structural blueprint with technical drafting tools on architectural plans",
+    alt: "Modern interior structural blueprint with technical drafting tools on architectural plans",
     description:
       "In 2024, I led the interior structural design project for a growing commercial company seeking a modern and functional workspace. I developed detailed technical drawings and optimized the spatial layout while ensuring full compliance with safety standards. The redesign improved space utilization by 15 percent and enhanced natural lighting integration. The final result combined structural precision with contemporary interior design principles.",
   },
