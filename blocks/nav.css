@@ -55,6 +55,11 @@ nav::before {
   z-index: 1;
 }
 
+.nav__link:hover {
+  box-shadow: 1px 1px 20px rgb(252, 252, 252);
+  cursor: pointer;
+}
+
 /*tablet */
 @media (min-width: 768px) {
   .nav__link {

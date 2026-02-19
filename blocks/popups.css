@@ -77,9 +77,9 @@
 .popup__text {
   width: 80%;
 
-  font-size: 1rem;
+  font-size: 0.5rem;
   text-align: center;
-  line-height: 1.8;
+  line-height: 2;
   color: rgba(255, 255, 255, 0.756);
   font-family: Georgia, "Times New Roman", Times, serif;
 
@@ -88,10 +88,19 @@
 
 /*tablet */
 @media (min-width: 768px) {
+  .popup__text {
+    font-size: 0.7rem;
+  }
 }
 /* desktop*/
 @media (min-width: 1024px) {
+  .popup__text {
+    font-size: 0.8rem;
+  }
 }
 /*big screen*/
 @media (min-width: 1440px) {
+  .popup__text {
+    font-size: 1.1rem;
+  }
 }
