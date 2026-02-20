@@ -42,6 +42,8 @@ const projectsGrid = document.querySelector(".projects__grid");
 const allProjectsImages = projectsGrid.querySelectorAll(
   ".projects__grid_image",
 );
+const storeTrack = document.querySelector(".store__track");
+const imagesTrack = storeTrack.querySelectorAll(".store__image");
 
 /////POPUPs
 const popupContainer = document.querySelector(".popup");
@@ -80,3 +82,12 @@ popupContainer.addEventListener("click", (evt) => {
     closePopup(popupImage);
   }
 });
+
+/////STORE TRACK
+let currentIndex = 0;
+const visibleItems = 3;
+const totalItems = imagesTrack.length;
+const maxIndex = totalItems - visibleItems;
+const itemWidth = imagesTrack[0].getBoundingClientRect().width;
+const gapSize = parseFloat(getComputedStyle(storeTrack).gap);
+const stepSize = gapSize + itemWidth;
