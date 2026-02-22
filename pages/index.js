@@ -42,8 +42,7 @@ const projectsGrid = document.querySelector(".projects__grid");
 const allProjectsImages = projectsGrid.querySelectorAll(
   ".projects__grid_image",
 );
-const storeTrack = document.querySelector(".store__track");
-const imagesTrack = storeTrack.querySelectorAll(".store__image");
+const buttonToStoreHero = document.querySelector(".hero__button_click");
 
 /////POPUPs
 const popupContainer = document.querySelector(".popup");
@@ -84,10 +83,72 @@ popupContainer.addEventListener("click", (evt) => {
 });
 
 /////STORE TRACK
+//CONSTs
+const storeTrack = document.querySelector(".store__track");
+const imagesTrack = storeTrack.querySelectorAll(".store__image");
+const nextButton = document.querySelector(".store__next");
+const visitButton = document.querySelector(".store__visit");
+const previousButton = document.querySelector(".store__before");
+
 let currentIndex = 0;
-const visibleItems = 3;
+let visibleItems = 1;
 const totalItems = imagesTrack.length;
-const maxIndex = totalItems - visibleItems;
-const itemWidth = imagesTrack[0].getBoundingClientRect().width;
-const gapSize = parseFloat(getComputedStyle(storeTrack).gap);
-const stepSize = gapSize + itemWidth;
+
+let itemWidth = imagesTrack[0].getBoundingClientRect().width;
+let gapSize = parseFloat(getComputedStyle(storeTrack).gap);
+let stepSize = gapSize + itemWidth;
+
+//FUNCTIONS
+function updateVisibleItems() {
+  if (window.innerWidth < 768) {
+    visibleItems = 1;
+  } else if (window.innerWidth >= 768 && window.innerWidth < 1024) {
+    visibleItems = 2;
+  } else if (window.innerWidth >= 1024) {
+    visibleItems = 3;
+  }
+}
+updateVisibleItems();
+
+function recalculateSizes() {
+  itemWidth = imagesTrack[0].getBoundingClientRect().width;
+  gapSize = parseFloat(getComputedStyle(storeTrack).gap);
+  stepSize = gapSize + itemWidth;
+}
+
+recalculateSizes();
+
+let maxIndex = totalItems - visibleItems;
+
+//EVENTs
+window.addEventListener("resize", () => {
+  updateVisibleItems();
+  recalculateSizes();
+  maxIndex = totalItems - visibleItems;
+  if (currentIndex > maxIndex) {
+    currentIndex = maxIndex;
+  }
+  storeTrack.style.transform = `translateX(-${currentIndex * stepSize}px)`;
+});
+
+nextButton.addEventListener("click", () => {
+  if (currentIndex < maxIndex) {
+    currentIndex += 1;
+    storeTrack.style.transform = `translateX(-${currentIndex * stepSize}px)`;
+  }
+});
+
+previousButton.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    currentIndex -= 1;
+    storeTrack.style.transform = `translateX(-${currentIndex * stepSize}px)`;
+  }
+});
+
+visitButton.addEventListener("click", () => {
+  window.location.href = "store.html";
+});
+
+buttonToStoreHero.addEventListener("click", () => {
+  window.location.href = "store.html";
+});

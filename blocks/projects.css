@@ -1,7 +1,8 @@
 .projects {
   width: 100%;
   margin: 0 auto;
-  padding: 0px 0px 40px;
+  padding: 20px 0px;
+  background-color: rgba(183, 177, 4, 0.564);
 }
 
 .projects__grid {
