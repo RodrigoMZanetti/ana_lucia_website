@@ -36,7 +36,7 @@ const projects = [
   },
 ];
 
-/////DOM
+/////DOM IMAGES FOR POPUP
 const anaPhoto = document.querySelector(".hero__image");
 const projectsGrid = document.querySelector(".projects__grid");
 const allProjectsImages = projectsGrid.querySelectorAll(
@@ -151,4 +151,18 @@ visitButton.addEventListener("click", () => {
 
 buttonToStoreHero.addEventListener("click", () => {
   window.location.href = "store.html";
+});
+
+//CREATE CARD - CARD.JS
+import Card from "../components/Card.js";
+import products from "../components/products.js";
+
+const storeTemplate = document
+  .querySelector("#template")
+  .content.querySelector(".card");
+const storeContainer = document.querySelector("#cards-container");
+
+products.forEach((product) => {
+  const newCard = new Card(product, storeTemplate);
+  storeContainer.append(newCard.generateCard());
 });
