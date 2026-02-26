@@ -57,7 +57,7 @@ init();
 anaPhoto.addEventListener("click", () => {
   imageContainer.src = anaPhoto.src;
   popupImageText.textContent = photoOfAna["description"];
-  openPopup(popupImage);
+  Popup.open(popupImage);
 });
 
 /////EVENT - OPEN PROJECTS'S PHOTO
@@ -156,6 +156,7 @@ buttonToStoreHero.addEventListener("click", () => {
 //CREATE CARD - CARD.JS
 import Card from "../components/Card.js";
 import products from "../components/products.js";
+import Popup from "../components/Popup.js";
 
 const storeTemplate = document
   .querySelector("#template")
