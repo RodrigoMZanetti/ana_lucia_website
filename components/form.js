@@ -1,134 +1,123 @@
 export default function init() {
-  /////PEGANDO OS ELEMENTOS PARA O DOM
+  const formEl = document.querySelector(".form__content");
 
-  const inputFormulario = document.querySelector(".formulario__form");
-  const inputNome = inputFormulario.querySelector("#name"); // ok
-  const inputData = inputFormulario.querySelector("#date"); // ok
-  const inputEmail = inputFormulario.querySelector("#email"); // ok
-  const checkboxButton = inputFormulario.querySelector(
-    ".formulario__form-checkbox-button",
-  ); // ok
-  const botaoSubmit = inputFormulario.querySelector(".formulario__form_button");
+  const inputName = formEl.querySelector("#name");
+  const inputDate = formEl.querySelector("#date");
+  const inputEmail = formEl.querySelector("#email");
 
-  /////ADICIONANDO FRASE DURANTE O INPUT NAME
+  const checkboxButton = formEl.querySelector(".form__checkbox-button");
+  const submitButtonForm = formEl.querySelector(".form__submit-button");
 
-  let spanPreenchimentoNome = document.createElement("span");
-  inputNome.after(spanPreenchimentoNome);
+  let spanNameValidation = document.createElement("span");
+  inputName.after(spanNameValidation);
 
-  inputNome.addEventListener("input", () => {
-    const inputValidacaoNome = inputNome.checkValidity();
+  inputName.addEventListener("input", () => {
+    const nameIsValid = inputName.checkValidity();
 
-    if (!inputValidacaoNome) {
-      spanPreenchimentoNome.textContent =
+    if (!nameIsValid) {
+      spanNameValidation.textContent =
         "The name must contain between 5 and 50 characters.";
-      spanPreenchimentoNome.classList.add("span-class");
+      spanNameValidation.classList.add("span-class");
     } else {
-      spanPreenchimentoNome.textContent = "";
-      spanPreenchimentoNome.classList.remove("span-class");
+      spanNameValidation.textContent = "";
+      spanNameValidation.classList.remove("span-class");
     }
   });
 
-  /////ADICIONANDO FRASE DURANTE O INPUT DATA
+  let spanDateValidation = document.createElement("span");
+  inputDate.after(spanDateValidation);
 
-  let spanPreenchimentoData = document.createElement("span");
-  inputData.after(spanPreenchimentoData);
+  inputDate.addEventListener("input", () => {
+    const dateIsValid = inputDate.checkValidity();
 
-  inputData.addEventListener("input", () => {
-    const inputValidacaoData = inputData.checkValidity();
-
-    if (!inputValidacaoData) {
-      spanPreenchimentoData.textContent = "Minimum date 01/01/1910";
-      spanPreenchimentoData.classList.add("span-class");
+    if (!dateIsValid) {
+      spanDateValidation.textContent = "Minimum date 01/01/1910";
+      spanDateValidation.classList.add("span-class");
     } else {
-      spanPreenchimentoData.textContent = "";
-      spanPreenchimentoData.classList.remove("span-class");
+      spanDateValidation.textContent = "";
+      spanDateValidation.classList.remove("span-class");
     }
   });
 
-  /////ADICIONANDO FRASE DURANTE O INPUT EMAIL
-
-  let spanPreenchimentoEmail = document.createElement("span");
-  inputEmail.after(spanPreenchimentoEmail);
+  let spanEmailValidation = document.createElement("span");
+  inputEmail.after(spanEmailValidation);
 
   inputEmail.addEventListener("input", () => {
-    const inputValidacaoEmail = inputEmail.checkValidity();
+    const emailIsValid = inputEmail.checkValidity();
 
-    if (!inputValidacaoEmail) {
-      spanPreenchimentoEmail.textContent =
+    if (!emailIsValid) {
+      spanEmailValidation.textContent =
         "Maximum 254 characters, including @ and a valid email address.";
-      spanPreenchimentoEmail.classList.add("span-class");
+      spanEmailValidation.classList.add("span-class");
     } else {
-      spanPreenchimentoEmail.textContent = "";
-      spanPreenchimentoEmail.classList.remove("span-class");
+      spanEmailValidation.textContent = "";
+      spanEmailValidation.classList.remove("span-class");
     }
   });
 
-  /////ADICIONANDO FRASE DE CHECKBOX
+  let spanCheckboxValidation = document.createElement("span");
+  checkboxButton.after(spanCheckboxValidation);
 
-  let spanPreenchimentoCheckbox = document.createElement("span");
-  checkboxButton.after(spanPreenchimentoCheckbox);
-
-  function checkBoxValidation(event) {
-    const verifyCheckbox = event.target;
-    if (!verifyCheckbox.checked) {
-      spanPreenchimentoCheckbox.textContent = "This field is required.";
-      spanPreenchimentoCheckbox.classList.add("span-class");
+  function checkBoxValidation() {
+    if (!checkboxButton.checked) {
+      checkboxButton.setCustomValidity("required");
+      spanCheckboxValidation.textContent = "This field is required.";
+      spanCheckboxValidation.classList.add("span-class");
     } else {
-      spanPreenchimentoCheckbox.textContent = "";
-      spanPreenchimentoCheckbox.classList.remove("span-class");
+      checkboxButton.setCustomValidity("");
+      spanCheckboxValidation.textContent = "";
+      spanCheckboxValidation.classList.remove("span-class");
     }
   }
 
   checkboxButton.addEventListener("change", checkBoxValidation);
 
-  /////BOTÃO DE SUBMIÇÃO APENAS QUANDO TUDO ESTIVER OKAY
+  submitButtonForm.disabled = true;
+  submitButtonForm.classList.add("sub-button-is-off");
 
-  botaoSubmit.disabled = true;
-  botaoSubmit.classList.add("sub-button-is-off");
-
-  function verificarInvalidezFormulario() {
-    return !inputFormulario.checkValidity();
+  function isFormInvalid() {
+    return !formEl.checkValidity();
   }
 
-  inputFormulario.addEventListener("input", () => {
-    botaoSubmit.disabled = !inputFormulario.checkValidity();
-    if (botaoSubmit.disabled) {
-      botaoSubmit.classList.remove("sub-button-is-on");
-      botaoSubmit.classList.add("sub-button-is-off");
+  formEl.addEventListener("input", () => {
+    submitButtonForm.disabled = !formEl.checkValidity();
+    if (submitButtonForm.disabled) {
+      submitButtonForm.classList.remove("sub-button-is-on");
+      submitButtonForm.classList.add("sub-button-is-off");
     } else {
-      botaoSubmit.classList.remove("sub-button-is-off");
-      botaoSubmit.classList.add("sub-button-is-on");
+      submitButtonForm.classList.remove("sub-button-is-off");
+      submitButtonForm.classList.add("sub-button-is-on");
     }
   });
 
-  inputFormulario.addEventListener("change", () => {
-    botaoSubmit.disabled = verificarInvalidezFormulario();
-    if (botaoSubmit.disabled) {
-      botaoSubmit.classList.remove("sub-button-is-on");
-      botaoSubmit.classList.add("sub-button-is-off");
+  formEl.addEventListener("change", () => {
+    submitButtonForm.disabled = isFormInvalid();
+    if (submitButtonForm.disabled) {
+      submitButtonForm.classList.remove("sub-button-is-on");
+      submitButtonForm.classList.add("sub-button-is-off");
     } else {
-      botaoSubmit.classList.remove("sub-button-is-off");
-      botaoSubmit.classList.add("sub-button-is-on");
+      submitButtonForm.classList.remove("sub-button-is-off");
+      submitButtonForm.classList.add("sub-button-is-on");
     }
   });
 
-  inputFormulario.addEventListener("submit", (event) => {
+  formEl.addEventListener("submit", (event) => {
     event.preventDefault();
-    checkBoxValidation({ target: checkboxButton });
+    checkBoxValidation();
 
-    if (!inputFormulario.checkValidity()) {
+    if (!formEl.checkValidity()) {
       return;
     } else {
-      inputFormulario.reset();
+      formEl.reset();
 
-      botaoSubmit.disabled = true;
-      botaoSubmit.classList.remove("sub-button-is-on");
-      botaoSubmit.classList.add("sub-button-is-off");
+      submitButtonForm.disabled = true;
+      submitButtonForm.classList.remove("sub-button-is-on");
+      submitButtonForm.classList.add("sub-button-is-off");
 
-      spanPreenchimentoNome.textContent = "";
-      spanPreenchimentoData.textContent = "";
-      spanPreenchimentoEmail.textContent = "";
-      spanPreenchimentoCheckbox.textContent = "";
+      spanNameValidation.textContent = "";
+      spanDateValidation.textContent = "";
+      spanEmailValidation.textContent = "";
+      spanCheckboxValidation.textContent = "";
     }
   });
 }

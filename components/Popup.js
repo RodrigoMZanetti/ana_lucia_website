@@ -23,7 +23,7 @@ class Popup {
   }
 
   setEventListeners() {
-    const closeButtonPopup = this._popup.querySelector(".popup__close");
+    const closeButtonPopup = this._popup.querySelector(".popup-close");
     closeButtonPopup.addEventListener("click", () => this.close());
     this._popup.addEventListener("mousedown", (evt) => {
       if (evt.target === evt.currentTarget) this.close();

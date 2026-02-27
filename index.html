@@ -74,94 +74,85 @@
         </div>
       </section>
 
-      <!--SESSÃO FORMULÁRIO-->
-      <section class="formulario" id="formulario">
-        <div class="formulario__title">
-          <h2 class="formulario__title-text">
-            Send your inquiry or project for review
-          </h2>
+      <section class="form" id="form">
+        <div class="form__header">
+          <h2 class="form__title">Send your inquiry or project for review</h2>
         </div>
-        <div class="formulario__content">
-          <!--FORMULÁRIO-->
-          <form action="#" id="form" class="formulario__form">
-            <!--NOME-->
-            <label for="name" class="formulario__form-label">Full Name*</label>
+        <div class="form__inputs">
+          <form action="#" class="form__content">
+            <label for="name" class="form__label">Full Name*</label>
             <input
               type="text"
               placeholder="Name"
               name="name"
               id="name"
-              class="formulario__form-input form__input"
+              class="form__input"
               minlength="5"
               maxlength="50"
               required
             />
-            <!--IDADE-->
 
-            <label for="date" class="formulario__form-label">Birth date*</label>
+            <label for="date" class="form__label">Birth date*</label>
             <input
               type="date"
               placeholder="dd/mm/aa"
               id="date"
               min="1910-01-01"
-              class="formulario__form-input form__input"
+              class="form__input"
               required
             />
-            <!--EMAIL-->
-            <label for="email" class="formulario__form-label"
-              >Your best e-mail*</label
-            >
+
+            <label for="email" class="form__label">Your best e-mail*</label>
             <input
               type="email"
               name="email"
-              class="formulario__form-input form__input"
               id="email"
+              class="form__input"
               placeholder="email@email.com"
               maxlength="254"
               required
             />
 
-            <label for="mensagem" class="formulario__form-label"
-              >Leave your message*</label
-            >
+            <label for="message" class="form__label">Leave your message*</label>
 
             <textarea
-              name="mensagem"
-              id="mensagem"
+              name="message"
+              id="message"
               placeholder="Type here..."
-              class="formulario__form-input"
+              class="form__input"
               rows="5"
               minlength="1"
               maxlength="1000"
             ></textarea>
 
-            <label for="arquivo" class="formulario__form-label">
+            <label for="file" class="form__label">
               File upload (PNG, WORD, PDF, JPG)*</label
             >
             <input
               type="file"
-              id="arquivo"
-              class="formulario__form-input"
+              id="file"
+              class="form__input"
               accept=".pdf, .png, .jpg, .jpeg, .doc, .docx"
               multiple
             />
-            <!--CHECKBOX-->
-            <div class="formulario__form-checkbox">
+
+            <div class="form__checkbox">
               <input
                 type="checkbox"
                 id="terms"
-                class="formulario__form-checkbox-button form__input"
+                class="form__checkbox-button form__input"
                 required
               />
-              <label for="terms" class="formulario__form-checkbox-label"
+              <label for="terms" class="form__checkbox-label"
                 >I agree with the terms</label
               >
             </div>
 
-            <button class="formulario__form_button">SUBMIT</button>
+            <button class="form__submit-button">SUBMIT</button>
           </form>
         </div>
       </section>
+
       <section class="media" id="clients">
         <div class="media__container">
           <div class="media__container_text">
@@ -228,7 +219,6 @@
         </div>
       </section>
 
-      <!--STORE-->
       <section class="store" id="store">
         <h2 class="store__title">OUR STORE</h2>
         <div class="store__images-grid">
@@ -262,7 +252,6 @@
       </section>
     </main>
 
-    <!--🔴🔴🔴SESSÃO FOOTER-->
     <section class="footer" id="footer">
       <div class="footer__containers">
         <div class="footer__logos">
@@ -287,7 +276,7 @@
               type="email"
               name="email"
               class="formulario__newsletter form__input"
-              id="email"
+              id="newsletter-email"
               placeholder="email@email.com"
               maxlength="254"
               required
