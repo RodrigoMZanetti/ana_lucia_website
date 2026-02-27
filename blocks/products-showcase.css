@@ -1,10 +1,19 @@
-.store {
+.products-showcase {
   width: 95%;
   margin: 0 auto;
   padding: 50px 0px;
 }
 
-.store__images-grid {
+.products-showcase__title {
+  color: rgba(0, 0, 0, 0.345);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.products-showcase__images-grid {
   width: 100%;
   margin: 0 auto;
   padding: 10px 10px;
@@ -15,53 +24,14 @@
   position: relative;
 }
 
-.store__track {
+.products-showcase__track {
   display: flex;
   gap: 20px;
   transition: transform 0.3s ease;
   z-index: 1;
 }
 
-.store__image {
-  width: 80%;
-  border-radius: 10px;
-}
-
-.store__title {
-  color: rgba(0, 0, 0, 0.345);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1rem;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-}
-
-.store__visit {
-  display: flex;
-  margin: 10px auto;
-  padding: 2px 0;
-}
-
-.store__next {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-
-  color: black;
-  background-color: rgba(183, 177, 4, 0.564);
-  border-radius: 50%;
-
-  font-size: 1.4rem;
-  font-weight: bold;
-
-  z-index: 2;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-}
-
-.store__before {
+.products-showcase__before {
   position: absolute;
   left: 20px;
   top: 50%;
@@ -80,19 +50,49 @@
   cursor: pointer;
 }
 
+.products-showcase__image {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.products-showcase__visit {
+  display: flex;
+  margin: 10px auto;
+  padding: 2px 0;
+}
+
+.products-showcase__next {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: black;
+  background-color: rgba(183, 177, 4, 0.564);
+  border-radius: 50%;
+
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
 /*tablet */
 @media (min-width: 768px) {
-  .store__title {
+  .products-showcase__title {
     font-size: 1.4rem;
   }
 
-  .store__image {
+  .products-showcase__image {
     width: 50%;
   }
 }
 /* desktop*/
 @media (min-width: 1024px) {
-  .store__image {
+  .products-showcase__image {
     width: 33.33%;
   }
 }

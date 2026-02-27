@@ -85,12 +85,12 @@ allProjectsImages.forEach((imageElement, index) => {
   });
 });
 
-//DOM - STORE
-const storeTrack = document.querySelector(".store__track");
-const imagesTrack = storeTrack.querySelectorAll(".store__image");
-const nextButton = document.querySelector(".store__next");
-const visitButton = document.querySelector(".store__visit");
-const previousButton = document.querySelector(".store__before");
+//DOM - products-showcase
+const storeTrack = document.querySelector(".products-showcase__track");
+const imagesTrack = storeTrack.querySelectorAll(".products-showcase__image");
+const nextButton = document.querySelector(".products-showcase__next");
+const visitButton = document.querySelector(".products-showcase__visit");
+const previousButton = document.querySelector(".products-showcase__before");
 
 let currentIndex = 0;
 let visibleItems = 1;
@@ -150,9 +150,9 @@ previousButton.addEventListener("click", () => {
 });
 
 visitButton.addEventListener("click", () => {
-  window.location.href = "store.html";
+  window.location.href = "products-showcase.html";
 });
 
 buttonToStoreHero.addEventListener("click", () => {
-  window.location.href = "store.html";
+  window.location.href = "products-showcase.html";
 });
