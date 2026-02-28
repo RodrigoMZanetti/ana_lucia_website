@@ -7,15 +7,15 @@
 
 .projects__grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 
   justify-items: center;
   justify-content: center;
 
   max-width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0px 10px;
 }
 
 .projects__grid_image {
@@ -39,10 +39,12 @@
   max-width: 80%;
 }
 
+/*------------------------------------------------------------------*/
+
 /*tablet */
 @media (min-width: 768px) {
   .projects__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .projects__grid {
@@ -51,9 +53,6 @@
 }
 /* desktop*/
 @media (min-width: 1024px) {
-  .projects__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 /*big screen*/
 @media (min-width: 1440px) {

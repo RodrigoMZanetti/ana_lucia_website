@@ -4,8 +4,54 @@
   padding: 0;
 }
 
+.header__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  z-index: 2;
+}
+
+.login-button {
+  background: transparent;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0px;
+}
+
+.login-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px white;
+}
+
+.login-button svg {
+  width: 50px;
+}
+
+.login-button__text {
+  font-size: 0.7rem;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0px;
+  color: white;
+}
+
 /*tablet */
 @media (min-width: 768px) {
+  .login-button svg {
+    width: 100px;
+  }
+
+  .login-button__text {
+    font-size: 1rem;
+  }
 }
 /* desktop*/
 @media (min-width: 1024px) {

@@ -44,6 +44,9 @@ const projects = [
   },
 ];
 
+//DOM BUTTONS
+const visitButton = document.querySelector(".products-showcase__button-visit");
+
 //POPUPs
 const popupContainer = document.querySelector(".popup");
 const popupImage = document.querySelector("#image-popup");
@@ -84,72 +87,8 @@ allProjectsImages.forEach((imageElement, index) => {
   });
 });
 
-//DOM - products-showcase
-const storeTrack = document.querySelector(".products-showcase__track");
-const imagesTrack = storeTrack.querySelectorAll(".products-showcase__image");
-const nextButton = document.querySelector(".products-showcase__next");
-const visitButton = document.querySelector(".products-showcase__visit");
-const previousButton = document.querySelector(".products-showcase__before");
-
-let currentIndex = 0;
-let visibleItems = 1;
-const totalItems = imagesTrack.length;
-
-let itemWidth = imagesTrack[0].getBoundingClientRect().width;
-let gapSize = parseFloat(getComputedStyle(storeTrack).gap);
-let stepSize = gapSize + itemWidth;
-
-//FUNCTIONS
-function updateVisibleItems() {
-  if (window.innerWidth < 768) {
-    visibleItems = 1;
-  } else if (window.innerWidth >= 768 && window.innerWidth < 1024) {
-    visibleItems = 2;
-  } else if (window.innerWidth >= 1024) {
-    visibleItems = 3;
-  }
-}
-updateVisibleItems();
-
-function recalculateSizes() {
-  itemWidth = imagesTrack[0].getBoundingClientRect().width;
-  gapSize = parseFloat(getComputedStyle(storeTrack).gap);
-  stepSize = gapSize + itemWidth;
-}
-
-window.addEventListener("load", () => {
-  recalculateSizes();
-});
-
-recalculateSizes();
-let maxIndex = totalItems - visibleItems;
-
-window.addEventListener("resize", () => {
-  updateVisibleItems();
-  recalculateSizes();
-  maxIndex = totalItems - visibleItems;
-  if (currentIndex > maxIndex) {
-    currentIndex = maxIndex;
-  }
-  storeTrack.style.transform = `translateX(-${currentIndex * stepSize}px)`;
-});
-
-nextButton.addEventListener("click", () => {
-  if (currentIndex < maxIndex) {
-    currentIndex += 1;
-    storeTrack.style.transform = `translateX(-${currentIndex * stepSize}px)`;
-  }
-});
-
-previousButton.addEventListener("click", () => {
-  if (currentIndex > 0) {
-    currentIndex -= 1;
-    storeTrack.style.transform = `translateX(-${currentIndex * stepSize}px)`;
-  }
-});
-
 visitButton.addEventListener("click", () => {
-  window.location.href = "products-showcase.html";
+  window.location.href = "./store.html";
 });
 
 buttonToStoreHero.addEventListener("click", () => {

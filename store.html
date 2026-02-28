@@ -31,29 +31,123 @@
         <div class="nav__links">
           <a class="nav__link" href="index.html">Main Page</a>
         </div>
+        <div class="header__buttons">
+          <button type="button" class="login-button">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="8" r="4" />
+              <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
+            </svg>
+            <p class="login-button__text">Sign In</p>
+          </button>
+          <button type="button" class="login-button">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <!-- user -->
+              <circle cx="9" cy="8" r="4" />
+              <path d="M2.5 20c0-3.6 4-6 6.5-6s6.5 2.4 6.5 6" />
+
+              <!-- plus -->
+              <rect x="17" y="5" width="2" height="8" rx="1" />
+              <rect x="14" y="8" width="8" height="2" rx="1" />
+            </svg>
+            <p class="login-button__text">Sign Up</p>
+          </button>
+          <button type="button" class="login-button">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 3h2l2 12h10l2-8H7"
+                stroke="white"
+                stroke-width="2"
+                fill="none"
+              />
+              <circle cx="9" cy="20" r="1.5" fill="white" />
+              <circle cx="17" cy="20" r="1.5" fill="white" />
+            </svg>
+            <p class="login-button__text">My orders</p>
+          </button>
+        </div>
       </nav>
     </header>
 
-    <main class="main">
-      <p>This page is currently under development</p>
-      <button type="button"><a href="index.html">BACK TO MAIN PAGE</a></button>
-    </main>
+    <main class="main"></main>
 
     <section class="store-grid">
       <template class="template" id="template">
         <div class="card">
-          <h2 class="card__title"></h2>
-          <p class="card__description"></p>
-          <img src="" alt="" class="card__image" />
-          <p class="card__rating"></p>
-          <p class="card__category"></p>
-          <p class="card__price"></p>
+          <div class="card__content">
+            <h2 class="card__title"></h2>
+            <p class="card__description"></p>
+            <img src="" alt="" class="card__image" />
+            <p class="card__rating"></p>
+            <p class="card__category"></p>
+            <p class="card__price"></p>
+          </div>
+          <div class="card__footer">
+            <button type="button" class="card__button"></button>
+          </div>
         </div>
       </template>
       <div class="cards-container" id="cards-container"></div>
     </section>
 
-    <footer class="footer" id="footer"></footer>
+    <section class="footer" id="footer">
+      <div class="footer__containers">
+        <div class="footer__logos">
+          <a href="https://instagram.com/yourusername" target="_blank">
+            <img
+              src="images/icone_instagram_128-138.png"
+              alt="Instagram logo"
+              class="footer__logos_image"
+            />
+          </a>
+        </div>
+
+        <div class="footer__contacts">
+          <a href="#" class="footer__contacts_link">Contact Us</a>
+          <a href="#" class="footer__contacts_link">FAQs</a>
+          <a href="#" class="footer__contacts_link">Terms & Conditions</a>
+        </div>
+        <div class="footer__newsletter">
+          <p class="footer__newsletter_text">Subscribe to our newsletter</p>
+          <div class="footer__newsletter_subscribe">
+            <input
+              type="email"
+              name="email"
+              class="formulario__newsletter form__input"
+              id="newsletter-email"
+              placeholder="email@email.com"
+              maxlength="254"
+              required
+            />
+            <button type="submit" class="footer__newsletter_subscribe-button">
+              Sign up
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer__copyright">
+        Copyright © 2026 Rodrigo Zanetti, All Rights Reserved.
+      </p>
+    </section>
     <script type="module" src="./pages/store.js"></script>
   </body>
 </html>

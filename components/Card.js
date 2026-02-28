@@ -7,6 +7,7 @@ class Card {
     this._price = product.indicators.price;
     this._category = product.indicators.category;
     this._rating = product.indicators.rating;
+    this._addToCartButton = product.button;
     this._template = template;
   }
 
@@ -26,13 +27,17 @@ class Card {
     templateImage.alt = this._alt;
 
     const templateRating = this._element.querySelector(".card__rating");
-    templateRating.textContent = this._rating;
+    templateRating.textContent = this._rating + `⭐`;
 
     const templateCategory = this._element.querySelector(".card__category");
     templateCategory.textContent = this._category;
 
     const templatePrice = this._element.querySelector(".card__price");
-    templatePrice.textContent = this._price;
+    templatePrice.textContent = `R$ ` + this._price;
+
+    const templateAddToCartButton =
+      this._element.querySelector(".card__button");
+    templateAddToCartButton.textContent = `Add to Cart`;
 
     return this._element;
   }
