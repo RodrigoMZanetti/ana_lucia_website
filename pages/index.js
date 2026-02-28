@@ -92,5 +92,5 @@ visitButton.addEventListener("click", () => {
 });
 
 buttonToStoreHero.addEventListener("click", () => {
-  window.location.href = "store.html";
+  window.location.href = "./store.html";
 });
