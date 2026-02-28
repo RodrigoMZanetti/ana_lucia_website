@@ -1,0 +1,11 @@
+@import url(/vendor/normalize.css);
+
+@import url(/blocks/html.css);
+@import url(/blocks/body.css);
+@import url(/blocks/header.css);
+@import url(/blocks/nav.css);
+@import url(/blocks/main.css);
+@import url(/blocks/store-grid.css);
+@import url(/blocks/footer.css);
+
+@import url(/blocks/popups.css);
