@@ -2,11 +2,11 @@
 
 ![Project Screenshot](./images/Screenshot.png)
 
-## Project Overview 📊
+## Project Overview 
 
 Ana Lúcia Engenharia is a front-end web project developed to simulate a professional engineering website, with a focus on interactivity, DOM manipulation, and structured JavaScript logic. The website allows user interaction through dynamic elements and scripts, serving as a practice project for combining HTML, CSS, and JavaScript in a real-world–like scenario.
 
-## Features ✨
+## Features 
 
 • Interactive elements handled with JavaScript
 • Dynamic behavior controlled via DOM manipulation
@@ -17,13 +17,13 @@ Ana Lúcia Engenharia is a front-end web project developed to simulate a profess
 • Custom validation feedback using DOM manipulation
 • Submit button state control based on form validity
 
-## Technologies Used 🛠️
+## Technologies Used 
 
 • HTML5 – semantic structure and content organization
 • CSS3 – layout, responsiveness, and visual styling
 • JavaScript (Vanilla JS)
 
-## Project Structure 🗂️
+## Project Structure 
 
 • index.html – main application markup
 • style.css – global styles and responsiveness
@@ -32,7 +32,7 @@ Ana Lúcia Engenharia is a front-end web project developed to simulate a profess
 • images/ – image assets
 • vendor/ – third-party or external resources
 
-## How to Run the Project ▶️
+## How to Run the Project 
 
 • Clone or download the repository  
 • Open index.html in your browser
@@ -40,12 +40,12 @@ Ana Lúcia Engenharia is a front-end web project developed to simulate a profess
 Optional (recommended):  
 • Run a local server (e.g. VS Code Live Server) to avoid path issues and better simulate a real environment
 
-## Project Status 📌
+## Project Status 
 
 ✅ Completed (learning project)
 Future improvements may include refactoring and code reuse.
 
-## Problem-Solving Approach 🧠
+## Problem-Solving Approach 
 
 • Breaking functionality into small, reusable JavaScript functions
 • Separating responsibilities between:
