@@ -1,4 +1,5 @@
 import Card from "../components/Card";
+import products from "../components/products";
 
 const storeTemplate = document
   .querySelector("#template")

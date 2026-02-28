@@ -1,4 +1,3 @@
-import Card from "../components/Card.js";
 import init from "../components/form.js";
 import PopupWithImage from "../components/PopupWithImage.js";
 import products from "../components/products.js";

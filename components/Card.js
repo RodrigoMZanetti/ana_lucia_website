@@ -12,27 +12,29 @@ class Card {
 
   generateCard() {
     const template = this._template.cloneNode(true);
+    this._element = template;
 
-    const templateTitle = template.querySelector(".card__title");
+    const templateTitle = this._element.querySelector(".card__title");
     templateTitle.textContent = this._title;
 
-    const templateDescription = template.querySelector(".card__description");
+    const templateDescription =
+      this._element.querySelector(".card__description");
     templateDescription.textContent = this._description;
 
-    const templateImage = template.querySelector(".card__image");
+    const templateImage = this._element.querySelector(".card__image");
     templateImage.src = this._imageUrl;
     templateImage.alt = this._alt;
 
-    const templateRating = template.querySelector(".card__rating");
+    const templateRating = this._element.querySelector(".card__rating");
     templateRating.textContent = this._rating;
 
-    const templateCategory = template.querySelector(".card__category");
+    const templateCategory = this._element.querySelector(".card__category");
     templateCategory.textContent = this._category;
 
-    const templatePrice = template.querySelector(".card__price");
+    const templatePrice = this._element.querySelector(".card__price");
     templatePrice.textContent = this._price;
 
-    return template;
+    return this._element;
   }
 }
 
