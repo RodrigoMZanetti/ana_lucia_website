@@ -1,5 +1,5 @@
-import Card from "../components/Card";
-import products from "../components/products";
+import Card from "../components/Card.js";
+import products from "../components/products.js";
 
 const storeTemplate = document
   .querySelector("#template")
