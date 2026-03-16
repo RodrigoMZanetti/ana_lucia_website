@@ -29,26 +29,27 @@ Ana Lúcia Engenharia is a front-end web project developed to simulate a profess
 
 ## Technologies Used
 
-• HTML5 – semantic structure and content organization
-• CSS3 – layout, responsiveness, and visual styling
-• JavaScript (Vanilla JS)
+- HTML5 – semantic structure and content organization
+- CSS3 – layout, responsiveness, and visual styling
+- JavaScript (Vanilla JS)
 
 ## Project Structure
 
-• index.html – main application markup
-• style.css – global styles and responsiveness
-• scripts/ – JavaScript files handling interactivity and logic
-• blocks/ – reusable layout blocks (CSS architecture)
-• images/ – image assets
-• vendor/ – third-party or external resources
+- index.html – main application markup
+- style.css – global styles and responsiveness
+- scripts/ – JavaScript files handling interactivity and logic
+- blocks/ – reusable layout blocks (CSS architecture)
+- images/ – image assets
+- vendor/ – third-party or external resources
 
 ## How to Run the Project
 
-• Clone or download the repository  
-• Open index.html in your browser
+- Clone or download the repository
+- Open index.html in your browser
 
-Optional (recommended):  
-• Run a local server (e.g. VS Code Live Server) to avoid path issues and better simulate a real environment
+Optional (recommended):
+
+- Run a local server (e.g. VS Code Live Server) to avoid path issues and better simulate a real environment
 
 ## Project Status
 
@@ -57,31 +58,31 @@ Future improvements may include performance optimization and code modularization
 
 ## Problem-Solving Approach
 
-• Breaking functionality into small, reusable JavaScript functions
-• Separating responsibilities between:
-• UI state (open/close elements)
-• User-triggered events
-• DOM updates
-• Using defer to ensure scripts load after HTML parsing
-• Organizing files to keep logic, styles, and assets clearly separated
+- Breaking functionality into small, reusable JavaScript functions
+- Separating responsibilities between:
+- UI state (open/close elements)
+- User-triggered events
+- DOM updates
+- Using defer to ensure scripts load after HTML parsing
+- Organizing files to keep logic, styles, and assets clearly separated
 
 Special attention was given to:
 
-• Understanding event flow (click, submit)
-• Reading from and writing to the DOM correctly
-• Maintaining clean and readable code structure
+- Understanding event flow (click, submit)
+- Reading from and writing to the DOM correctly
+- Maintaining clean and readable code structure
 
 ## What I Learned
 
 During this project I practiced:
 
-• DOM manipulation with JavaScript
-• Handling user events such as click and submit
-• Implementing client-side form validation
-• Structuring front-end projects using organized folders
-• Separating logic, layout, and assets for better maintainability
+- DOM manipulation with JavaScript
+- Handling user events such as click and submit
+- Implementing client-side form validation
+- Structuring front-end projects using organized folders
+- Separating logic, layout, and assets for better maintainability
 
 ## Author 👤
 
-• GitHub: https://github.com/RodrigoMZanetti
-• LinkedIn: https://www.linkedin.com/in/rodrigomaturanozanetti/
+- GitHub: https://github.com/RodrigoMZanetti
+- LinkedIn: https://www.linkedin.com/in/rodrigomaturanozanetti/
