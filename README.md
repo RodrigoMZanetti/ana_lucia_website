@@ -1,8 +1,16 @@
 # Ana-Lucia-Engenharia
 
-![Project Screenshot](./images/Screenshot-1.png)
-![Project Screenshot](./images/Screenshot-2.png)
-![Project Screenshot](./images/Screenshot-3.png)
+## Live Demo
+
+https://rodrigomzanetti.github.io/ana_lucia_website/index.html
+
+## Preview
+
+![Home](./images/Screenshot-1.png)
+
+![Services](./images/Screenshot-2.png)
+
+![Services](./images/Screenshot-3.png)
 
 ## Project Overview
 
@@ -44,8 +52,8 @@ Optional (recommended):
 
 ## Project Status
 
-✅ Completed (learning project)
-Future improvements may include refactoring and code reuse.
+✅ This project was completed as part of a front-end learning process.
+Future improvements may include performance optimization and code modularization.
 
 ## Problem-Solving Approach
 
@@ -62,6 +70,16 @@ Special attention was given to:
 • Understanding event flow (click, submit)
 • Reading from and writing to the DOM correctly
 • Maintaining clean and readable code structure
+
+## What I Learned
+
+During this project I practiced:
+
+• DOM manipulation with JavaScript
+• Handling user events such as click and submit
+• Implementing client-side form validation
+• Structuring front-end projects using organized folders
+• Separating logic, layout, and assets for better maintainability
 
 ## Author 👤
 
